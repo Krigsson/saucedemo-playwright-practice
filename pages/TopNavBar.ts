@@ -1,4 +1,4 @@
-import {Page, Locator} from '@playwright/test'
+import {Page, Locator} from '@playwright/test';
 
 export class TopNavBar{
     readonly page:          Page;
@@ -9,9 +9,9 @@ export class TopNavBar{
 
     constructor(page: Page) {
         this.page           = page;
-        this.cartLink       = page.getByTestId("shopping-cart-link");
-        this.menuButton     = page.getByRole('button', {name: "Open Menu"});
-        this.aboutButton    = page.getByTestId("about-sidebar-link");
+        this.cartLink       = page.getByTestId('shopping-cart-link');
+        this.menuButton     = page.getByRole('button', {name: 'Open Menu'});
+        this.aboutButton    = page.getByTestId('about-sidebar-link');
         this.logoutButton   = page.getByTestId('logout-sidebar-link');
     }
 

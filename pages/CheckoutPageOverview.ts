@@ -1,5 +1,5 @@
-import { Page, Locator } from "@playwright/test"
-import { TopNavBar } from "./TopNavBar";
+import { Page, Locator } from '@playwright/test';
+import { TopNavBar } from './TopNavBar';
 
 export class CheckoutPageOverview {
     readonly page:              Page;

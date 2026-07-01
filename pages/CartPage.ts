@@ -1,5 +1,5 @@
-import { Page, Locator } from "@playwright/test"
-import { TopNavBar } from "./TopNavBar";
+import { Page, Locator } from '@playwright/test';
+import { TopNavBar } from './TopNavBar';
 
 export class CartPage {
     readonly page:                      Page;
@@ -11,9 +11,9 @@ export class CartPage {
     constructor(page: Page) {
         this.page                       = page;
         this.topNavBar                  = new TopNavBar(page);
-        this.continueShoppingButton     = page.getByTestId("continue-shopping");
-        this.checkoutButton             = page.getByTestId("checkout");
-        this.cartItems                  = page.getByTestId("inventory-item");
+        this.continueShoppingButton     = page.getByTestId('continue-shopping');
+        this.checkoutButton             = page.getByTestId('checkout');
+        this.cartItems                  = page.getByTestId('inventory-item');
     }
 
     async getItemByName(itemName: string) {
